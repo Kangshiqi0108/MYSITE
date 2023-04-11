@@ -13,4 +13,7 @@
     <SourceRoot Include="C:\Users\KangShiqi\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)antdesign\0.14.4\buildTransitive\AntDesign.props" Condition="Exists('$(NuGetPackageRoot)antdesign\0.14.4\buildTransitive\AntDesign.props')" />
+  </ImportGroup>
 </Project>

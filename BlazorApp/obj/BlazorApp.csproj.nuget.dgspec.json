@@ -43,6 +43,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "AntDesign": {
+              "target": "Package",
+              "version": "[0.14.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
