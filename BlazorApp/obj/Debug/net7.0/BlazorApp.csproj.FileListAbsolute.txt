@@ -30,3 +30,7 @@ D:\Projects\MYSITE\BlazorApp\obj\Debug\net7.0\refint\BlazorApp.dll
 D:\Projects\MYSITE\BlazorApp\obj\Debug\net7.0\BlazorApp.pdb
 D:\Projects\MYSITE\BlazorApp\obj\Debug\net7.0\BlazorApp.genruntimeconfig.cache
 D:\Projects\MYSITE\BlazorApp\obj\Debug\net7.0\ref\BlazorApp.dll
+D:\Projects\MYSITE\BlazorApp\bin\Debug\net7.0\AntDesign.dll
+D:\Projects\MYSITE\BlazorApp\bin\Debug\net7.0\Microsoft.AspNetCore.Components.DataAnnotations.Validation.dll
+D:\Projects\MYSITE\BlazorApp\bin\Debug\net7.0\OneOf.dll
+D:\Projects\MYSITE\BlazorApp\obj\Debug\net7.0\BlazorApp.csproj.CopyComplete

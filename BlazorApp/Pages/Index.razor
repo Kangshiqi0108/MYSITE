@@ -1,9 +1,32 @@
 ﻿@page "/"
+@using BlazorApp.Data
+<PageTitle>My Site</PageTitle>
 
-<PageTitle>Index</PageTitle>
+<h1>
+    <Icon Type="chrome" Theme="outline"/>
+        Hello, world!
+</h1>
+<Tabs DefaultActiveKey="2">
+    <TabPane Key="1">
+        <TabTemplate>
+            <span><Icon Type="android" />
+            Code
+            </span>
+        </TabTemplate>
+        <ChildContent>
+          Code Section :Store code files;
+        </ChildContent>
+    </TabPane>
+    <TabPane Key="2">
+        <TabTemplate>
+            <span><Icon Type="apple" />Diary</span>
+        </TabTemplate>
+        <ChildContent>Diary Section : Store diary files;</ChildContent>
+    </TabPane>
+</Tabs>
 
-<h1>Hello, world!</h1>
 
-Welcome to your new app.
+@code{
+    
+}
 
-<SurveyPrompt Title="How is Blazor working for you?" />
