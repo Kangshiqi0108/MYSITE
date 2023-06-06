@@ -8,7 +8,10 @@ builder.Services.Configure<DiaryStoreDatabaseSettings>(
     builder.Configuration.GetSection("DiaryStoreDatabase"));
 // Add services to the container.
 builder.Services.AddSingleton<DiaryService>();
-
+builder.Services.Configure<StudentStoreDatabaseSettings>(
+builder.Configuration.GetSection("StudentStoreDatabase"));
+// Add services to the container.
+builder.Services.AddSingleton<StudentService>();
 builder.Services.Configure<CodeStoreDatabaseSettings>(
     builder.Configuration.GetSection("CodeStoreDatabase"));
 // Add services to the container.

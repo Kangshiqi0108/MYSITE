@@ -1,43 +1,9 @@
 ﻿@page "/diary"
-
+@using System.ComponentModel
+@using AntDesign.TableModels
+@using System.Text.Json
+@inject IHttpClientFactory ClientFactory
 <PageTitle>Diary</PageTitle>
-
 <h1>
-    
     <Icon Type="bulb" Theme="outline"/>Diary
-    </h1>
-
-<Divider Orientation="left" Style="font-weight:bold">Diary Section</Divider>
-<AntList DataSource="@data" TItem="BasicItem">
-    <ListItem OnClick="()=>ItemClick(context.Title)">
-        <ListItemMeta AvatarTemplate="avatar" Description="Ant Design, a design language for background applications, is refined by Ant UED Team">
-            <TitleTemplate>
-                <a href="https://ng.ant.design">@context.Title</a>
-            </TitleTemplate>
-        </ListItemMeta>
-    </ListItem>
-</AntList>
-
-
-@code{
-
-    RenderFragment avatar = @<Avatar Src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"></Avatar>;
-
-    public class BasicItem
-    {
-        public string? Title { get; set; }
-    }
-
-    public List<BasicItem> data = new List<BasicItem>
-    {
-        new BasicItem { Title = "Ant Design Title 1"},
-        new BasicItem { Title = "Ant Design Title 2"},
-        new BasicItem { Title = "Ant Design Title 3"},
-        new BasicItem { Title = "Ant Design Title 4"},
-    };
-
-    public void ItemClick(string title)
-    {
-        Console.WriteLine($"item was clicked: {title}");
-    }
-}
+</h1>
